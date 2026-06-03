@@ -54,6 +54,6 @@ async function submitInfo(){
     }
 
     sessionStorage.setItem('pay_order', pay_order);
-    window.location.href = '/点餐支付/submit_out.html';    
+    window.location.href = './点餐支付/submit_out.html';    
 }
 
