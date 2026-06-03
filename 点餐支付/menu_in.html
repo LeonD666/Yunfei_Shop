@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>店内点餐</title>
+    <link rel="stylesheet" href="/css/table_style.css">
+</head>
+
+<body>
+  <!-- 页眉 -->
+  <header>
+    <!-- 左边：公司 Logo -->
+    <div class="logo">
+        <img src="/images/Logo 云飞店铺 100x40.jpg" alt="公司Logo">
+    </div>
+    <!-- 右边：导航栏 -->
+    <nav>
+      <a href="/index.html">首页</a>
+      <a href="/活动通知/">活动通知</a>
+      <a href="/产品介绍/">产品介绍</a>
+    </nav>
+  </header>
+  
+  <main>
+    <h2>商品菜单</h2>
+    <div class="menu" id="menu-list">
+      <!-- 商品会自动渲染在这里 -->
+    </div>
+
+    <h2>购物车</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>序号</th>
+          <th>商品名</th>
+          <th>单价</th>
+          <th>数量</th>
+          <th>小计</th>
+          <th>移除商品</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body">
+        <!-- 购物车自动渲染 -->
+      </tbody>
+    </table>
+
+    <h3>总价：<span id="total-price">0</span> 元</h3><br>
+
+    <button class="button buttonChange" onclick="window.location.href='/点餐支付/payment_submit_in.html'">前往支付</button><br>
+
+  </main>
+
+  <!-- 引入核心JS -->
+  <script src="/js/menu_in.js"></script>
+</body>
+</html>
